@@ -37,6 +37,7 @@ describe Artist do
 
     it "can find an artist by name" do
       artist.name = 'Miley Cyrus'
+      binding.pry
       expect(Artist.find_by_name('Miley Cyrus')).to eq(artist)
     end
 
